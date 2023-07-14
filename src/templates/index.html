@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to our restaurant, where culinary delights meet warm hospitality. Indulge in a delightful dining experience as our talented chefs create mouthwatering dishes using the finest ingredients.  ">
+  <meta name="description"
+    content="Welcome to our restaurant, where culinary delights meet warm hospitality. Indulge in a delightful dining experience as our talented chefs create mouthwatering dishes using the finest ingredients.  ">
   <link rel="apple-touch-icon" href="/assets/icon/icon-72x72.png">
   <link rel="manifest" href="./app.webmanifest" />
   <link rel="icon" href="./favicon.png" />
@@ -17,16 +18,18 @@
   <header>
     <nav>
       <div class="logo">
-      <img src="./images/assets/caraousel.png" alt="Restaurant Catalog App" width="120" tabindex="0">
+        <!-- using picture tag to show carosel with responsive image -->
+
+        <img src="./images/assets/caraousel.webp" alt="Restaurant Catalog App" width="120" tabindex="0">
       </div>
       <div class="menu-div">
         <button id="menu" class="header__menu">☰</button>
       </div>
       <div class="mobile-menu" id="mobile-menu">
         <ul class="menu">
-          <li><a href="#/" >Home</a></li>
-          <li><a href="#/favorite" >Favorite</a></li>
-          <li><a href="https://github.com/wendikardian" >About Us</a></li>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li><a href="https://github.com/wendikardian">About Us</a></li>
         </ul>
       </div>
     </nav>
@@ -34,8 +37,13 @@
   </header>
   <main id="mainContent" tabIndex="0">
     <section class="hero">
-      <img src="./images/heros/hero-image_1.jpg" alt="Restaurant Catalog App" width="120" tabindex="0">
-      <div class="caption-hero" >
+      <picture>
+        <source media="(max-width: 700px)" srcset="./images/heros/hero_1_small.webp" alt="Restaurant Catalog App"
+          tabindex="0">
+        <img src="./images/heros/hero_1_large.webp" alt="Restaurant Catalog App" tabindex="0">
+      </picture>
+      <!-- <img src="./images/heros/hero-image_1.jpg" alt="Restaurant Catalog App" width="120" tabindex="0"> -->
+      <div class="caption-hero">
         <h1 class="title-hero" tabindex="0">Welcome to Carousel Restorant </h1>
         <p class="caption-desc" tabindex="0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad excepturi
           minus temporibus minima. Ratione quod magni accusantium, magnam, saepe perferendis molestias iure nisi quas
@@ -43,12 +51,12 @@
       </div>
     </section>
 
-    <section class="restaurant-list" id="restaurant-list" tabIndex="0" >
+    <section class="restaurant-list" id="restaurant-list" tabIndex="0">
 
       </div>
     </section>
     <section id="booking-section">
-      <h1 tabindex="0" >Booking here</h1>
+      <h1 tabindex="0">Booking here</h1>
       <form action="" class="form-data">
         <div class="input-box">
           <label for="name">Name</label>

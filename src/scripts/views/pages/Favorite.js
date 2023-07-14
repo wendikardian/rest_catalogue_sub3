@@ -15,6 +15,7 @@ const Favorites = {
   async afterRender() {
     const restaurants = await FavoriteResto.allResto();
     const restContainer = document.querySelector('.restaurant-container');
+    restContainer.innerHTML = '';
     restaurants.forEach((resto) => {
       console.log(resto);
       const imgPath = `${CONFIG.API_URL}${CONFIG.IMG_PATH_SMALL}`;
