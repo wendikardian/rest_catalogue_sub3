@@ -6,7 +6,7 @@ const detailDescription = ({ data }) => {
   }
   return `
   <h1 class="detail_text">Detail Restaurant</h1>
-  <img src="${CONFIG.API_URL}${CONFIG.IMG_PATH_MEDIUM}${data.pictureId}" alt="${data.name}" >
+  <img src="${CONFIG.API_URL}${CONFIG.IMG_PATH_MEDIUM}${data.pictureId}" alt="${data.name}" alt="resto" class="lazyload"  loading="lazy" >
   <h1>  ${data.name}</h1>
   <p> 📌 ${data.address}- 🌆${data.city}</p>
   <p>${data.description}</p>

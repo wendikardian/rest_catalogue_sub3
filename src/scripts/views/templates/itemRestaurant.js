@@ -4,7 +4,7 @@ const itemRestaurant = ({ data, imagePath, description }) => {
   }
   return `
     <div class="card" tabIndex="0">
-        <img class="card-image" src="${imagePath}${data.pictureId}" alt="${data.name}"           />
+        <img class="card-image lazyload" src="${imagePath}${data.pictureId}" alt="${data.name}"           />
         <p class="card-name-restaurant"> ${data.name} </p>
         <p> 🗺️ Location : ${data.city} </p>
         <p> ⭐️ Rating : ${data.rating} </p>
