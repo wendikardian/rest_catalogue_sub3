@@ -8,9 +8,9 @@ const addReviewForm = () => `
       </div>
         <div >
         <label for="review">Review</label>
-        <input type="text" id="review" placeholder="Your review" name="name" required class="review-input">
+        <input id="review" placeholder="Your review" name="name" class="review-input">
       </div>
-            <input type="submit" >
+            <input type="submit" id="send_data_review" >
       </form>
         </div>
     `;

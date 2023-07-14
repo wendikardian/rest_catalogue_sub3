@@ -76,8 +76,8 @@ const Detail = {
       dataId: url.id,
     });
     reviews.addReview();
-    reviews.submitReview();
     reviews.list();
+    reviews.submitReview();
   },
 
 };
