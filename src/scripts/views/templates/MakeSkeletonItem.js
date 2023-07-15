@@ -1,7 +1,7 @@
 // create skeleton element
 class MakeSkeletonItem extends HTMLElement {
   connectedCallback() {
-    this._title = this.getAttribute("main-title") || null;
+    this._title = this.getAttribute('main-title') || null;
     this.render();
   }
 
@@ -14,4 +14,4 @@ class MakeSkeletonItem extends HTMLElement {
             `;
   }
 }
-customElements.define("skeleton-el", MakeSkeletonItem);
+customElements.define('skeleton-el', MakeSkeletonItem);

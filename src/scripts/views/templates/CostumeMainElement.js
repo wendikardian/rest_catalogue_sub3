@@ -1,4 +1,4 @@
-import createItemListSkeleton from "./createItemListSkeleton";
+import createItemListSkeleton from './createItemListSkeleton';
 
 class MainElement extends HTMLElement {
   connectedCallback() {
